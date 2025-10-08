@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - OutDoor Crafts Lanscapes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">OutDoor Crafts Lanscape Pty(Ltd)</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
+ <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Our Location</h4>
+                            <p>Butterworth, East London, Durban</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+                            <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>084 990 2333</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>amilisiwem@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.636124578758!2d18.4729113152142!3d-33.92467308063938!2m3!1f0!2f0!3f0!4m13!3e2!4m5!1s0x1dcc5d7f68c933a7%3A0x6a6d2cef6fb4026!2sCape%20Town!3m2!1d-33.9248685!2d18.4240553!4m5!1s0x1e2ecf656c2cc36f%3A0x34984c3290532c8!2sDurban!3m2!1d-29.858680399999998!2d31.0218404!5e0!3m2!1sen!2sza!4v1657542314186!5m2!1sen!2sza" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Request a Free Quote</h3>
+                    <div id="formAlert" class="form-alert"></div>
+                    
+                    <!-- Updated form action to use FormSubmit.co -->
+                    <form id="quoteForm" action="https://formsubmit.co/amilisiwem@gmail.com" method="POST">
+                        <!-- FormSubmit configuration -->
+                        <input type="hidden" name="_subject" value="New quote request from OutDoor Crafts Lanscapes website">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <i class="form-icon fas fa-user"></i>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <i class="form-icon fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <i class="form-icon fas fa-phone"></i>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <i class="form-icon fas fa-clipboard-list"></i>
+                            <select id="service" name="service" class="form-input">
+                                <option value="">Select a service</option>
+                                <option value="Lawn Maintenance">Lawn Maintenance</option>
+                                <option value="Landscape Design">Landscape Design</option>
+                                <option value="Patio Installations">Patio Installations</option>
+                                <option value="Garden Design">Garden Design</option>
+                                <option value="Garden Container">Garden Container</option>
+                                <option value="Path Design">Path Design</option>
+                                <option value="Plant Design">Plant Design</option>
+                                <option value="Weed Removal">Weed Removal</option>
+                                <option value="Other Service">Other Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <i class="form-icon fas fa-edit"></i>
+                            <textarea id="message" name="message" class="form-input" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
